@@ -29,14 +29,24 @@ export default function Login() {
   }
 
   return (
+    // <main>
+    //   <h2 className="text-center">Log In</h2>
+
+    //   <AuthForm handleSubmit={handleSubmit}/>
+
+    //   {formError && (
+    //     <div className="error">{formError}</div>
+    //   )}
+    // </main>
     <main>
-      <h2 className="text-center">Log In</h2>
+    <h2 className="text-center">Log In</h2>
 
-      <AuthForm handleSubmit={handleSubmit}/>
+    <AuthForm handleSubmit={handleSubmit}/>
 
-      {formError && (
-        <div className="error">{formError}</div>
-      )}
-    </main>
+    {formError && (
+      <div className="error">{formError}</div>
+    )}
+  </main>
+
   )
 }
